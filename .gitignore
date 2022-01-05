@@ -11,3 +11,4 @@
 *.bbl
 *.log
 *.out
+.Rproj.user
