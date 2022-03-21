@@ -14,7 +14,7 @@ Exam II
 ===
 
 - Coverage will be modules 5 -- 7
-- The exam will be during on Thursday, November 4th
+- The exam will be during on Thursday, March 24
 - The exam will be open note/open book (open resources)
 - You may not talk to anyone during the exam except for myself or a TA
 - All questions must be sent via private chat. 
@@ -545,7 +545,7 @@ Now we can calculate $p(\Sigma \mid \bm{y},  \btheta)$
 \text{tr}((S_o +S_\theta) \Sigma^{-1})/2\}
 \end{align}
 This implies that 
-$$\Sigma \mid \bm{y}, \btheta \sim \text{inverseWishart}(\nu_o + n, [S_o + S_\theta]^{-1} =: S_n)$$
+$$\Sigma \mid \bm{y}, \btheta \sim \text{inverseWishart}(\nu_o + n, [S_o + S_\theta]^{-1} =: S_n^{-1})$$
 
 Continued
 ===
