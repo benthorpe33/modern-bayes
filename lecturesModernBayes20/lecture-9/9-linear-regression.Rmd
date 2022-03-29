@@ -13,15 +13,13 @@ font-size: 8px
 
  
 
-Final Exam
+Exam III
 ===
 
-Exam III is **December 2, during class** (open note/open book)
+Exam III is **April 12, during class** (open note/open book)
 
 - The material will be on modules 1 -- 9.
 - I will go over more details closer to the exam
-
- 
 
 
 
@@ -45,13 +43,17 @@ Oxygen uptake case study
 Experimental design: 12 male volunteers.
 
 \begin{enumerate}
-\item $O_2$ uptake measured at the beginning of the study
 \item 6 men take part in a randomized aerobics program
-\item 6 remaining men participate in a running program
-\item $O_2$ uptake measured at end of study
+\item 6 remaining men take part in a randomized running program
+\item \textcolor{blue}{The maximal $O_2$ uptake measured before and after the 12 week program} 
+\item \textcolor{blue}{The change in maximal $O_2$ uptake is then calculated for each individual}
 \end{enumerate}
 
 What type of exercise is the most beneficial?
+
+\vspace*{2em}
+
+Full details of the study can be found in Hoff, page 149-151. 
 
 Data
 ===
@@ -78,7 +80,7 @@ legend(27,0,legend=c("aerobic","running"),pch=c(16,16),col=c("green","red"))
 Data analysis
 ===
 
-$y$ = change in oxygen uptake (scalar)
+$y$ = change in maximal oxygen uptake (scalar)
 
 $x_1$ = exercise indicator (0 for running, 1 for aerobic)
 
@@ -745,7 +747,7 @@ The coach has to decide which swimmer should compete in a meet two weeks from th
 Final Grades
 ===
 
-I am proposing to drop your lowest exam grade (out of Exam I, Exam II, and the Final Exam). 
+I am proposing to drop your lowest exam grade (out of Exam I, Exam II, and the Exam III). 
 
 - Homework: 30 percent
 - Highest Exam: 35
