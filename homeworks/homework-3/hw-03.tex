@@ -4,7 +4,7 @@
 \begin{document}
 \title{Homework 3}
 \author{STA-360/602}
-\date{Due at 5:00 PM EDT  on January 21}
+\date{}
 \maketitle
 
 \textbf{There is no reproducibility component to this homework, so you only need to upload this assignment to Gradescope. You do not need to submit your solution to the lab exercise since it's not worth any points.}\\
@@ -59,13 +59,26 @@ Let
 \end{align*}
 where $p(\theta) = \dfrac{\alpha \beta^\alpha}{\theta^{\alpha +1}}I_{(\beta,\infty)}(\theta).$
 Write out the likelihood $p(X=x\mid \theta).$ Then calculate the posterior distribution of $\theta|X=x.$  
+
+\textbf{Hint 1}: To set up this problem, do the following:
+
+$$p(\theta \mid x) \propto \frac{1}{\theta} I_{(0,\theta)}(x)
+\times 
+\frac{\alpha \beta^{\alpha}}
+{\theta^{\alpha + 1}}
+I_{(\beta, \infty)}(\theta).$$
+
+\textbf{Hint 2}: You cannot drop the indicators. You must write the indicators as functions of $\theta$ since this is the random variable. 
+
+\textbf{Hint 3}: It will end up being an updated Pareto. 
+
   
   
 \item (15)  points total) {\em The Bayes estimator or Bayes rule} \\
 \textbf{The goal of this problem is to practice a similar problem that we considered in Module 2, where we derived the Bayes rule under squared error loss and found the result was the posterior mean.}\\
 \begin{enumerate}
 \item (5 pts) Find the Bayes estimator (or Bayes rule) when the loss function is  $L(\theta, \delta(x))~=~c~(\theta-\delta(x))^2,$ where $\textcolor{red}{c >0}$ is a constant. 
-\item (10 pts) Derive the Bayes estimator (or Bayes rule) when $L(\theta, \delta(x)) = w(\theta) (g(\theta)-\delta(x))^2.$ Do so without writing any integrals. Note that you can write $\rho(\pi,\delta(x)) =  E[L(\theta,\delta(x))|X].$  \textcolor{red}{You may assume that $w(\theta) > 0.$} \textcolor{red}{Don't forget to prove or state why the Bayes rule(s) are unique.}
+\item (10 pts) Derive the Bayes estimator (or Bayes rule) when $L(\theta, \delta(x)) = w(\theta) (g(\theta)-\delta(x))^2.$ Do so without writing any integrals. Note that you can write $\rho(\theta,\delta(x)) =  E[L(\theta,\delta(x))|X].$  \textcolor{red}{You may assume that $w(\theta) > 0.$} \textcolor{red}{Don't forget to prove or state why the Bayes rule(s) are unique.}
 \end{enumerate}
 
 %\item  (10 points total) {\em Basic decision theory}

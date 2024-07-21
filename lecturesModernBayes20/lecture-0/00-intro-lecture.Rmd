@@ -20,10 +20,7 @@ What is Bayesian Statistics?
 \vspace*{1em}
 -[Wikipedia](https://en.wikipedia.org/wiki/Bayesian_statistics)
 
-Class, Lab, OH
-===
 
-All classes are currently remote until notified due to COVID-19. 
 
 Instructor
 ===
@@ -32,54 +29,71 @@ Prof. Rebecca Steorts (resteorts.github.io)
 \vspace*{1em}
 
 \begin{itemize}
-\item Class: Tues/Th, 10:15 -- 11:30 AM EDT 
-\item OH: Tues/Th, 9:15 - 10:15 AM EDT (Zoom)
-\item Zoom ID: 925 6381 7937
-\item Course webpage: https://resteorts.github.io/teach/bayes22.html
+\item Class: Tues/Th, 1:45 - 3:00 PM EDT (Old Chemistry 116)
+\item OH: Tues/Th, 3:00 - 4:00 PM EDT (Old Chemistry 216)
+\item Zoom ID: 944 0907 6733
+\item Course webpage: https://resteorts.github.io/teach/bayes-spring-23.html
 \end{itemize}
 
- 
+Class will be in person unless you are notified! OH will be over zoom as students have tended to like this and I can answer questions more rapidly. 
 
 
 Teaching Assistants
 ===
 
-Aihua Li, MS Student
+Andrea Aveni, PhD Student
 
 \begin{itemize}
-\item Lab-01: Monday: 1:45 PM – 3:00 PM EDT, Old Chemistry 025 (Back up: Evan)
-\item Meeting ID: 979 3386 5844
-\item Will hold OH and grade
+\item Lab-01: Monday 1:45pm - 3:00pm EDT, Old Chemistry 003 (Backup: Lexin)
+Meeting ID: 954 6174 7646
+\item Lab-02: Monday: 3:30 – 4:45 PM EDT: Allen 103 (Back up: Lexin)
+\item Will hold OH
+\item Will grade and answer questions on piazza! 
 \end{itemize}
 
+
+Lab will be in person unless notified. OH will be over zoom. 
+
+Teaching Assistants
+===
+
+Lexin Lu, MS Student
+
+\begin{itemize}
+\item Will hold OH
+\item Will answer questions over Piazza
+\item Will grade and answer questions on piazza! 
+\end{itemize}
+
+OH will be over zoom. 
 
 
 Teaching Assistants
 ===
 
-Evan Knox, PhD Student
+Xiaozhu Zhang, MS Student
 
 \begin{itemize}
-\item Lab-02: Friday: 3:30 - 4:45 PM EDT, Old Chemistry 101 (Back up: Aihua)
-\item Meeting ID: 979 3386 5844
-\item Will hold OH and grade
+\item Will hold OH
+\item Will answer questions over Piazza
+\item Will grade and answer questions on piazza! 
 \end{itemize}
 
-
+OH will be over zoom. 
 
 
 
 Where to find information
 ===
 
-- Course website (all major course information here): [https://resteorts.github.io/teach/bayes22.html](https://resteorts.github.io/teach/bayes22.html)
+- Course website (all major course information here): [https://resteorts.github.io/teach/bayes-spring-23.html](https://resteorts.github.io/teach/bayes-spring-23.html)
 
 - Piazza Forum: 
 
 [https://piazza.com/duke](https://piazza.com/duke)
 
 
-- Course syllabus [https://github.com/resteorts/modern-bayes/blob/master/syllabus/syllabus-sta602-spring-22.pdf](https://github.com/resteorts/modern-bayes/blob/master/syllabus/syllabus-sta602-spring-22.pdf)
+- Course syllabus [https://github.com/resteorts/modern-bayes/blob/master/syllabus/syllabus-sta602-spring-23.pdf](https://github.com/resteorts/modern-bayes/blob/master/syllabus/syllabus-sta602-spring-23.pdf)
 
 \vspace*{2em}
 
@@ -88,12 +102,15 @@ Remark: Videos on Github are too large to view, so you will need to download the
 Where to find information
 ===
 
-- Sakai (upload homework Rmd file and any supporting files (data)): [https://shib.oit.duke.edu/idp/authn/external?conversation=e1s1](https://shib.oit.duke.edu/idp/authn/external?conversation=e1s1)
+- Course cheat sheet (a summary of course information):
+[https://github.com/resteorts/modern-bayes/blob/master/syllabus/deadlines-cheatsheat.pdf](https://github.com/resteorts/modern-bayes/blob/master/syllabus/deadlines-cheatsheat.pdf)
 
-- Duke Gradescope (upload homework pdf only):
+- Sakai (upload homeworks): [https://shib.oit.duke.edu/idp/authn/external?conversation=e1s1](https://shib.oit.duke.edu/idp/authn/external?conversation=e1s1)
+
+- Duke Gradescope (upload homeworks):
 [https://gradescope.com/auth/saml/duke](https://gradescope.com/auth/saml/duke)
 
-- See syllabus for detailed uploading instructions 
+
  
 
 Other resources
@@ -106,13 +123,9 @@ Other resources
 - A One Pager on Prob Distributions  
 [https://github.com/resteorts/modern-bayes/blob/master/reading/common-distributions-one-pager.pdf](https://github.com/resteorts/modern-bayes/blob/master/reading/common-distributions-one-pager.pdf)
 
-Course information
-===
 
-Course website (all major course information here):  [https://resteorts.github.io/teach/bayes22.html](https://resteorts.github.io/teach/bayes22.html)
 
-Course cheat sheet (a summary of course information):
-[https://github.com/resteorts/modern-bayes/blob/master/syllabus/deadlines-cheatsheat.pdf](https://github.com/resteorts/modern-bayes/blob/master/syllabus/deadlines-cheatsheat.pdf)
+
 
 Prior Knowledge 
 ===
@@ -138,7 +151,7 @@ Course Objectives
 
 
 
-Unstable/slow internet?
+Missed class/review material?
 ===
 
 Go to [https://github.com/resteorts/modern-bayes/](https://github.com/resteorts/modern-bayes/) and fork the repository. 
@@ -200,6 +213,7 @@ Activities & Assessments
 
 - <font class="vocab">Homework</font>: Individual assignments combining conceptual and computational skills along with lab exercises. *Lowest score dropped.*
 
+
 - <font class="vocab">Labs</font>: **Attending lab is highly encouraged**, and, there will be a lab problem on each homework each week. 
 
 - <font class="vocab">Class/Lab</font>: **You will be responsible for keeping up with all class and lab material on a weekly basis (even though there are recordings)!** 
@@ -229,13 +243,14 @@ Lab Engagement
 Homeworks
 ===
 
-1. Please see the syllabus regarding homework instructions for Sakai and Gradescope. 
-2. Please start the homework early and not late. 
-3. Ask questions early and post to Piazza.  
-4. Your lowest homework will be dropped. 
-5. All homework assignments can be submitted in Sakai and on Gradescope in case you wish to work ahead in the course. 
+1. All code must be written to be reproducible in Markdown. 
+2. All derivations can be done in any format of your choosing (word, latex, markdown, written by hand) but must be converted to a pdf document. It must be legible.
+3. You reproducible Rmd file is uploaded to Sakai. Your PDF file is uploaded to Gradescope. 
+4. Ask questions early if you have a problem to a TA regarding submission issues. 
+5. Your lowest homework will be dropped. 
+6. The first four our homeworks can be submitted in Sakai and on GradeScope at anytime in case you want to work ahead. 
 
-Remark: Sakai is for reproducible code (you will receive a grade for this). Gradescope is to make grading is done fairly/consistently for all students. Unfortunately, there is not a platform that handles both. 
+Remark: Sakai is for reproducible code. Gradescope is to make grading easier for everyone. Unfortunately, there is not a platform that handles both. 
 
 **Please see the syllabus for all homework guidelines.**
 
@@ -250,10 +265,11 @@ Why Sakai + Gradescope?
 - ensure  complete  fairness
 - allow  students  to  continue  to  learn  from  homeworks  by  reworking problems  without  the  right  answer  written  out  to  the  side
 
+
 Exams
 ===
 
-The format of the exams will be discussed closer to the time of the exam. The dates of the exams will be posted soon. 
+The format of the exams will be discussed closer to the time of the exam. At this time, plan to be for the exams in person unless there is an announcement about this. 
 
 Grade Calculation
 ===
@@ -271,7 +287,6 @@ Grade Calculation
 - Grades will **never** be curved down. 
 - You are expected to attend lectures and labs in order to keep up with the course material.
 - There will be no attendance grade or participation grade. 
-- If you are an undergraduate, you will be graded as a graduate student in the course. 
 
 
 Absences
@@ -280,7 +295,7 @@ Absences
 - Students who miss a class due to a scheduled varsity trip, religious holiday, or short-term illness should fill out the respective form.
      - These excused absences do not excuse you from assigned work. 
 
-- If you have a personal or family emergency or chronic health condition that affects your ability to participate in class, please contact your academic dean’s office.
+- If you have a personal or family emergency or chronic health condition that affects your ability to participate in class, please contact myself and or your academic dean’s office.
 
 - Exam dates cannot be changed and no make-up exams will be given. 
 
@@ -344,7 +359,7 @@ Technology/Other
 - Ensure the volume on all devices is set to mute.
 - Refrain from engaging in activities not related to the class discussion. Browsing the web and social media, excessive messaging, playing games, etc. is not only a distraction for you but is also a distraction for everyone around you.
 - If you have a question, I don't mind if you interrupt me during class. 
-- If you find a **typo in the slides**, please write these down and email these to myself/Cathy so they can be fixed. 
+- If you find a **typo in the slides**, please write these down and post these privately to the instructors on Piazza so they can be fixed. 
 
 Accessibility
 ===
@@ -373,4 +388,4 @@ Announcements
 - **Please see me if you are on the waiting list**
 - **Please do not come to class if you believe that you may be sick. Please reach out an let the TA team know what is going on so that we can know what is going on and can be helpful.**
 - **If your situation changes during the semester for any reason, please email myself and the TAs so that we can help you.**
-- **In return, I would ask that everyone be flexible and understanding of everyone else (including instructors and TAs) as this is a very difficult and trying time for everyone.**
+- **In return, I would ask that everyone be flexible and understanding of everyone else (including instructors and TAs) as this is still a very difficult and trying time for everyone.**

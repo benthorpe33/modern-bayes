@@ -9,33 +9,7 @@ output:
 font-size: 8px
 ---
 
-Announcements
-===
 
-- Thank you to everyone that completed the survey. 
-- I'll provide some actionable items below. 
-
-Feedback
-===
-
-- The github repo has been cleaned up extensively. 
-- Exams will be solely online (during class period) by feedback from class, and will be open note and open book. 
-- "Please move the lab time." These weren't set by me, and I don't have the authority to do this. 
-- "Please go faster/slower." "Great pace." 
-- "I'd like more OH hours." The TA's and I are pretty flexible if you have a question or need to meet. Can anyone not make any OH due to a class conflict? If so, see me after class. 
-- The class is quite divided regarding being online and being in person. We'll do out best to work this out in a safe way for everyone.
-- "Lab is not helping me." 
-
-Resources 
-===
-
-Don't let the resources be overwhelming. 
-
-Instead, figure out what works the best for you and use them. What works for one student may be drastically different than what works for another student. 
-
-My goal is to set you up for success and provide you with many different ways to succeed so you're not struggling. 
-
-If you find yourself struggling, please let me know so I can help you. 
 
 
 Agenda
@@ -44,7 +18,7 @@ Agenda
 - The variance versus precision
 - The re-parameterized normal distribution 
 - Common properties
-- The normal-uniform model
+- The normal-improper model
 - The normal-normal model
 
 Normal distribution
@@ -108,11 +82,13 @@ a X + b Y\sim\N(a\mu + b m,\,a^2\sigma^2+ b^2 s^2).
 
 
 
-Normal-Uniform
+\textcolor{blue}{Normal-Improper}
 ===
 $$ X_1,\dotsc,X_n \mid \theta \iid\N(\theta,\sigma^2). $$
 
 Assume the prior on $\theta$ is constant over the real line. We can write this as $p(\theta) \propto 1,$ where $-\infty < \theta < \infty.$
+
+\textcolor{blue}{Observe that this density is improper as any constant density over the real line integrates to $\infty.$}
 
 Derive the posterior distribution.\footnote{Please observe that the posterior is not conjugate to the prior in this situation, so it's very important to make sure that the posterior is a proper distribution.}
 
@@ -136,7 +112,7 @@ p(\theta \mid x_{1:n})
 This implies that 
 $$\theta \mid x_{1:n} \sim N(\bar{x}, (n\ell)^{-1}) = N(\bar{x}, \sigma^2/n)$$
 
-Commonly asked questions on the Normal-Uniform derivation
+Commonly asked questions on the Normal-Improper derivation
 ===
 
 1. Why do we add and subtract $\bar{x}$? 
@@ -325,6 +301,7 @@ $$\btheta_m-\btheta_f\mid x_{1:k},y_{1:\ell}\,\sim\,\N(M_m-M_f,\, L_m^{-1} + L_f
 so we can compute $\Pr(\text{bimodal}\mid \text{data})$ using the normal c.d.f.\ $\Phi$:
 \begin{align*}
 &\Pr(\text{bimodal}\mid \text{data})= \Pr\big(|\btheta_m-\btheta_f|>2\sigma \mid x_{1:k},y_{1:\ell}\big) \\
+&= \textcolor{red}{\Pr(\btheta_m-\btheta_f < -2 \sigma) + \Pr(\btheta_m-\btheta_f > 2 \sigma)} \\
 &= \Phi(-2\sigma\mid 13.4,0.45^2)
 + \big(1-\Phi(2\sigma\mid 13.4,0.45^2)\big)\\
 & = 6.1\times 10^{-9}.
@@ -338,7 +315,7 @@ Takeaways
 
 - We reviewed the univariate normal distribution and properties of it (such as symmetry about the mean). 
 - We discussed types of data that empirically have a normal distribution to motivate its usage. 
-- We dervied the Normal-Uniform model, where the uniform distribution is the first improper prior we have seen in this course. 
+- We dervied the Normal-Improper model, where we observed our first improper prior. 
 - We derived the Normal-Normal model. 
 - We considered an application of human heights from Schilling et al. (2002), where we showed that the posterior probability of bimodality was zero (regarding a plot of combined heights). 
 
@@ -351,7 +328,7 @@ Detailed Takeaways for Exam
 - Knowing the CLT
 - Knowing what type of data is approximately normal and what data is not
 - Knowing properties of the normal that we will often work with such as symmetry about the mean 
-- Being able to derive the posterior of the normal-uniform model
+- Being able to derive the posterior of the normal-improper model
 - Understanding that a non-informative prior is highly informative and why. 
 - Being able to derive the normal-normal posterior distribution
 - Knowing how to write out the posterior mean and variance intuitively

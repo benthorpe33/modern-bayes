@@ -14,7 +14,7 @@ Exam II
 ===
 
 - Coverage will be modules 5 -- 7
-- The exam will be during on Thursday, March 24
+- The exam will be during on Thursday, November 10th
 - The exam will be open note/open book (open resources)
 - You may not talk to anyone during the exam except for myself or a TA
 - All questions must be sent via private chat. 
@@ -305,7 +305,9 @@ Linear Algebra Tricks
 
 Lemma 2: 
 
-Suppose $\bm{x}$ is a vector. $\bm{x}^TA\bm{x}$ is called a **quadratic form**. 
+Suppose $\bm{x_{p \times 1}}$ is a vector and $A$ is a $p \times p$ dimensional matrix. 
+
+Then $\bm{x_{1 \times p}}^TA_{p \times p}\bm{x_{p \times 1}}$ is called a **quadratic form**. 
 
 $$\bm{x}^TA\bm{x} = tr(\bm{x}^TA\bm{x}) = tr(\bm{x}\bm{x}^TA) = tr(A\bm{x}\bm{x}^T)$$
 
@@ -388,7 +390,7 @@ Goals
 
 Conjugate to MVN
 ===
-Suppose that $$\bm{y} = (y_1 \ldots y_n)^T \mid \theta \sim MVN(\theta, \Sigma). $$
+Suppose that \textcolor{blue}{$$\bm{y_i} = (y_{i1} \ldots y_{ip})^T \mid \theta \sim MVN(\theta, \Sigma), $$ where $i=1,\ldots,n.$}
 Let $$\pi(\btheta) \sim MVN(\bmu, \Omega). $$
 
 What is the full conditional distribution of $\btheta \mid \bm{y}, \Sigma$?

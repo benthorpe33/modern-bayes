@@ -105,6 +105,14 @@ converge---is referred to as the \emph{mixing rate}.
 \item An algorithm with good performance is said to ``have good mixing'', or ``mix well''.
 \end{itemize}
 
+Gibbs is a type of MCMC
+===
+\textcolor{blue}{Under some conditions, assume that $E|(X,Y)| < \infty.$ Assume that $$(X,Y) \sim p(x,y)$$}
+
+\textcolor{blue}{Then $$\frac{1}{M} \sum_{i=1}^M (X_i, Y_i) \rightarrow E[(X,Y)]$$ as $M \rightarrow \infty.$}
+
+\textcolor{blue}{Thus, we have an approximation of $E[(X,Y)],$ which is referred to MCMC in this setting (the pairs are not i.i.d.)}
+
 Exponential Example
 ===
 Consider the following Exponential model for observation(s) $x=(x_1,\ldots,x_n).$\footnote{Please note that in the attached data there are 40 observations, which can be found in \text{data-exponential.csv}.}:
@@ -187,7 +195,7 @@ Gibbs sampler code
 # run Gibbs sampler
 n.sims <- 10000
 # return the result (res)
-res <- sampleGibbs(.25,.25,n.sims,data)
+res <- sampleGibbs(0.25,0.25,n.sims,data)
 head(res)
 ```
 
@@ -226,7 +234,7 @@ Toy Example
 ===
 An easy way to generate a sample from $Z\sim\TExp(\theta,(0,c))$, is:
 \begin{enumerate}
-    \item Sample $U\sim \Uniform(0,F(c|\theta))$ where $$F(x|\theta) = 1-e^{-\theta x}$$ is the $\Exp(\theta)$ c.d.f.
+    \item First, sample $\textcolor{blue}{U}\sim \Uniform(0,F(c|\theta))$ where $$F(x|\theta) = 1-e^{-\theta x}$$ is the $\Exp(\theta)$ c.d.f.
     \item Set $Z = F^{-1}(U|\theta)$ where $$F^{-1}(u|\theta) = -(1/\theta)\log(1 - u)$$ is the inverse c.d.f.\ for $u\in(0,1)$.
 \end{enumerate}
 
@@ -305,7 +313,7 @@ $$\bm\mu|\lambda,x_{1:n}\, \sim \,\N(M_\lambda,L_\lambda^{-1})$$
  where $$L_\lambda =\lambda_0+ n\lambda \;\;  \text{and} \;\;
  M_\lambda =\frac{\lambda_0\mu_0+\lambda\sum_{i = 1}^n x_i}{\lambda_0+ n\lambda}.$$
 
-For any fixed value of $\mu$, it is straightforward to derive\footnote{do this on your own} that
+For any fixed value of $\mu$, it is straightforward to derive\footnote{derivation is found at the end of slides} that
 \begin{align}\label{equation:lambda-semi-conjugate}
 \bm\lambda|\mu, x_{1:n}\,\sim\,\Ga(A_\mu, B_\mu)
 \end{align}
@@ -628,3 +636,47 @@ Notes on truncated exponential example can be found here:
 
 Notes on the two-stage Gibbs sampler set up can be found here:
 \url{https://github.com/resteorts/modern-bayes/blob/master/lecturesModernBayes20/lecture-7/class-notes/gibbs-partI/intro-gibbs.pdf}
+
+
+Exercise
+===
+
+Recall that 
+
+\begin{align}
+X_1, \ldots, X_n \mid \lambda &\stackrel{iid}{\sim} \text{Normal}(\mu, \lambda^{-1})\\
+\lambda &\sim \text{Gamma}(a,b)
+\end{align}
+
+Let's derive the posterior update of $\lambda \mid x_{1:n},$ which we utilized in an earlier derivation. 
+
+Exercise
+===
+
+\begin{align}
+p(\lambda \mid x_{1:n}) &\propto p(x_{1:n} \mid \lambda) p(\lambda) \\
+&= \prod_{i=1}^n [\sqrt{\frac{\lambda}{2\pi}} 
+\exp\{ 
+-\frac{\lambda}{2} 
+(x_i - \mu)^2
+\} ] \times
+\frac{b^a}{\Gamma(a)}\lambda^{a-1}e^{-b\lambda}\\
+& \propto (\lambda)^{n/2} \exp\{ 
+-\frac{\lambda}{2} 
+\sum_{i=1}^n (x_i - \mu)^2
+\} ] \times \lambda^{a-1}e^{-b\lambda} \\
+& \propto (\lambda)^{a + n/2 - 1} 
+\exp\{ 
+\lambda[b +
+\sum_{i=1}^n (x_i - \mu)^2]
+\} 
+\end{align}
+
+This implies that 
+
+\begin{align}
+\lambda \mid x_{1:n} \sim \text{Gamma}(a + n/2, b +
+\sum_{i=1}^n (x_i - \mu)^2)
+\end{align}
+
+
